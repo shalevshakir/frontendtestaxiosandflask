@@ -12,7 +12,7 @@
     <div id="display"></div>
     <script>
         const SERVER = "https://liveservertest-p0b6.onrender.com/test"
-        axios(SERVER+"cat").then(res => display.innerHTML ="<select id='cats' onchange='samp_select()'>" + res.data.map(cat => `<option value=${cat.catid}>
+        axios(SERVER).then(res => display.innerHTML ="<select id='cats' onchange='samp_select()'>" + res.data.map(cat => `<option value=${cat.catid}>
        
             ${cat.name}
             ${cat.age}
